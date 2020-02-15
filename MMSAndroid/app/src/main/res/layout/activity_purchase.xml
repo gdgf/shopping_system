@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        
+        <ImageView
+            android:id="@+id/iv_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_title_back_btn"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:text="进货"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="商品" />
+
+    <Button
+        android:id="@+id/supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:text="供应商" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="58dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="进价："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+                <!-- inputType="phone"表明是输入电话号码的输入框 -->
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="输入进价，单位元"
+                    android:selectAllOnFocus="true"
+                    android:inputType="number" />
+                    android:textColor="@color/colorPrimary" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_below="@+id/tableLayout"
+                android:layout_alignStart="@+id/tableLayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="数量："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+                <!-- android:inputType="numberPassword"表明只能接受数字密码 -->
+                <EditText
+                    android:id="@+id/num"
+                    android:layout_width="305dp"
+                    android:inputType="number" />
+                    android:layout_height="wrap_content"
+                    android:hint="输入数量，单位件" />
+            </TableRow>
+
+            <TableRow
+                android:layout_below="@+id/tableLayout"
+                android:layout_alignStart="@+id/tableLayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="进货日期："
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+                <!-- android:inputType="numberPassword"表明只能接受数字密码 -->
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content"
+                    android:hint="格式：2018-02-04" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="212dp"
+            android:text="确认进货" />
+
+        <Button
+            android:id="@+id/worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:text="进货员" />
+
+
+    </RelativeLayout>
+</LinearLayout>

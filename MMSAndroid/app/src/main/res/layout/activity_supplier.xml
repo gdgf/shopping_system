@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 直接使用数组资源给出列表项 -->
+            <!-- 设置使用红色的分隔条 -->
+            <ListView
+                android:id="@+id/myList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="133dp"
+            android:background="#00b4d4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/view_wall"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shouhuo" />
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/view_home"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

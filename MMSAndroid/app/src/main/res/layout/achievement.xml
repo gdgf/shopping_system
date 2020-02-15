@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/iv_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_title_back_btn"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:text="员工业绩"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="52dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="年份:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+            <!-- inputType="phone"表明是输入电话号码的输入框 -->
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="样例：2018"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="月份:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+            <!-- android:inputType="numberPassword"表明只能接受数字密码 -->
+            <EditText
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="样例：06"
+                android:inputType="number" />
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <Button
+            android:id="@+id/worker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginBottom="6dp"
+            android:text="售货员选择" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="6dp"
+            android:text="开始查询" />
+
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="7"
+        android:stretchColumns="7">
+
+        <TableRow
+            android:id="@+id/stock_list_header_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+
+                style="@style/textViewHead"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:text="销售的商品" />
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+
+                style="@style/textViewHead"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:text="对应的数量" />
+
+        </TableRow>
+    </TableLayout>
+    <View style="@style/list_item_seperator_layout"
+        android:layout_height="2dp"
+        />
+
+    <ListView
+        android:id="@+id/achlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/holo_green_light"
+        android:dividerHeight="1dp" />
+
+
+</LinearLayout>

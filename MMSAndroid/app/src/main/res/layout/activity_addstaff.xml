@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/staffInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/iv_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_title_back_btn"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:text="添加员工"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="编号："
+            android:textSize="10pt" />
+        <!-- 输入用户名的文本框 -->
+        <EditText
+            android:id="@+id/staffID"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名："
+            android:textSize="10pt" />
+        <!-- 输入用户名的文本框 -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="性别："
+            android:textSize="10pt" />
+        <!-- 输入用户名的文本框 -->
+        <EditText
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="年龄："
+            android:textSize="10pt" />
+        <!-- 输入用户名的文本框 -->
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="职务："
+            android:textSize="10pt" />
+        <!-- 输入用户名的文本框 -->
+        <EditText
+            android:id="@+id/kind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电话号码:"
+            android:textSize="10pt" />
+        <!-- 输入电话号码的文本框 -->
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:phoneNumber="true"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="银行账号："
+            android:textSize="10pt" />
+        <!-- 输入用户名的文本框 -->
+        <EditText
+            android:id="@+id/accountID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/upload"
+        android:text="确定添加" />
+
+</TableLayout>
+

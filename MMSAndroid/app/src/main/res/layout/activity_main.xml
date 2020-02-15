@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="106dp" />
+
+            <Button
+                android:id="@+id/sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="售货" />
+
+            <Button
+                android:id="@+id/purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进货" />
+
+            <Button
+                android:id="@+id/staff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="员工基本信息" />
+
+            <Button
+                android:id="@+id/supper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="供应商基本信息" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="133dp"
+            android:background="#00b4d4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/hall"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shouhuo" />
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

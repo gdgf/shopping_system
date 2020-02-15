@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d6e6e5"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="410dp"
+            android:layout_height="51dp"
+            android:text="请填写注册账号与密码："
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_marginTop="52dp"
+            android:stretchColumns="1"
+            tools:layout_editor_absoluteX="52dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="账号:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+                <!-- inputType="phone"表明是输入电话号码的输入框 -->
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请填写账号"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="密码:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+                <!-- android:inputType="numberPassword"表明只能接受数字密码 -->
+                <EditText
+                    android:id="@+id/passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/rRegister"
+            android:layout_width="105dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="314dp"
+            android:background="@drawable/icon_btn_register"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="388dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

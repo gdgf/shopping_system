@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+    <View style="@style/list_item_cell_seperator_layout" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/textViewCell"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="text14" />
+    <View style="@style/list_item_cell_seperator_layout" />
+
+    <TextView
+        android:id="@+id/goods"
+        style="@style/textViewCell"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="text13" />
+    <View style="@style/list_item_cell_seperator_layout" />
+
+    <TextView
+
+        android:id="@+id/worker"
+        style="@style/textViewCell"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="text14" />
+    <View style="@style/list_item_cell_seperator_layout" />
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/textViewCell"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="text14" />
+    <View style="@style/list_item_cell_seperator_layout" />
+
+    <TextView
+        android:id="@+id/num"
+        style="@style/textViewCell"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="text14" />
+    <View style="@style/list_item_cell_seperator_layout" />
+
+</LinearLayout>

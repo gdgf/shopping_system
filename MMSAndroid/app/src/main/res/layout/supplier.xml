@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/iv_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_title_back_btn"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="150dp"
+            android:text="供应商信息"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <View style="@style/list_item_seperator_layout" />
+
+    <View style="@style/list_item_seperator_layout"
+        android:layout_height="2dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="7"
+        android:stretchColumns="7">
+
+        <TableRow
+            android:id="@+id/stock_list_header_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+                android:id="@+id/head1"
+                style="@style/textViewHead"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="编号" />
+
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+                android:id="@+id/head2"
+                style="@style/textViewHead"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:text="姓名" />
+
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+                android:id="@+id/head3"
+                style="@style/textViewHead"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="商品" />
+
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+                style="@style/textViewHead"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="电话号码" />
+
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+
+                style="@style/textViewHead"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="银行账号" />
+
+            <View style="@style/list_item_cell_seperator_layout" />
+
+            <TextView
+                style="@style/textViewHead"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="地址" />
+
+            <View style="@style/list_item_cell_seperator_layout" />
+        </TableRow>
+    </TableLayout>
+    <View style="@style/list_item_seperator_layout"
+        android:layout_height="2dp"
+        />
+    <ListView
+        android:id="@+id/buslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/holo_green_light"
+        android:dividerHeight="1dp" />
+</LinearLayout>

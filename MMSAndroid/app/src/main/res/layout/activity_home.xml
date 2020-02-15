@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="366dp"
+        android:layout_height="524dp"
+        android:background="#daeef1"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <RelativeLayout
+            android:id="@+id/accout"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp">
+
+            <TextView
+                android:id="@+id/tv_accout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="154dp"
+                android:layout_weight="1"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:src="@drawable/ic_head" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="129dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-129dp"
+                android:layout_toStartOf="@+id/nickname"
+                android:text="账号：" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="351dp"
+            android:layout_height="333dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/im"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="21dp"
+                android:text="进货记录" />
+
+            <Button
+                android:id="@+id/salse"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="131dp"
+                android:layout_marginTop="22dp"
+                android:text="销售记录" />
+
+            <Button
+                android:id="@+id/store"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/salse"
+                android:text="库存" />
+
+            <Button
+                android:id="@+id/achievement"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="153dp"
+                android:text="业绩" />
+
+            <Button
+                android:id="@+id/inventory"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignTop="@+id/achievement"
+                android:layout_centerHorizontal="true"
+                android:text="盘存" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/inventory"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:text="退出系统" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/accout"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-433dp"
+            android:background="#00b4d4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/hall"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/shouhuo" />
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="94dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="93.6dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
