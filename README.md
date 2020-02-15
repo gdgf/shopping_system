@@ -1,5 +1,4 @@
-服务端和客户端要运行在同一局域网下面。所以需要修改客户端base模块
-HttpUtil.java中的IP.
+目前服务端和客户端要运行在同一局域网下面。所以需要修改客户端base模块HttpUtil.java中的IP.
 
 1. MMSAndroid是android客户端，运行环境android studio,首先注册账户后
    才能用，使用过程中一直需要联网，因为没有在android手机本地保存数据。
