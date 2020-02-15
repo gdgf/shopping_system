@@ -24,7 +24,7 @@ public class HttpUtil
 {
 	// 创建HttpClient对象
 	public static HttpClient httpClient = new DefaultHttpClient();
-	public static final String BASE_URL = "http://192.168.43.22:8000/";
+	public static final String BASE_URL = "...";  //添加自己的IP
 	/**
 	 *
 	 * @param url 发送请求的URL

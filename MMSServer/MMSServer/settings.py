@@ -75,12 +75,13 @@ WSGI_APPLICATION = 'MMSServer.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# 以下添加自己的信息
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'my_mms',
         'USER': 'root',
-        'PASSWORD': 'Wk251314',
+        'PASSWORD': '...',   
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
