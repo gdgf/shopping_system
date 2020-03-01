@@ -1,8 +1,7 @@
-Ä¿Ç°·þÎñ¶ËºÍ¿Í»§¶ËÒªÔËÐÐÔÚÍ¬Ò»¾ÖÓòÍøÏÂÃæ¡£ËùÒÔÐèÒªÐÞ¸Ä¿Í»§¶ËbaseÄ£¿éHttpUtil.javaÖÐµÄIP.
+ç›®å‰æœåŠ¡ç«¯å’Œå®¢æˆ·ç«¯è¦è¿è¡Œåœ¨åŒä¸€å±€åŸŸç½‘ä¸‹é¢ã€‚æ‰€ä»¥éœ€è¦ä¿®æ”¹å®¢æˆ·ç«¯baseæ¨¡å—HttpUtil.javaä¸­çš„IP.
 
-1. MMSAndroidÊÇandroid¿Í»§¶Ë£¬ÔËÐÐ»·¾³android studio,Ê×ÏÈ×¢²áÕË»§ºó
-   ²ÅÄÜÓÃ£¬Ê¹ÓÃ¹ý³ÌÖÐÒ»Ö±ÐèÒªÁªÍø£¬ÒòÎªÃ»ÓÐÔÚandroidÊÖ»ú±¾µØ±£´æÊý¾Ý¡£
-2. MMSServerÊÇ·þÎñ¶Ë, ¿ÉÒÔÔÚpycharmÖÐÔËÐÐ£¬Ò²¿ÉÒÔÔÚÃüÁîÐÐÖÐÔËÐÐ(
-   ÐèÒª°²×°Django»·¾³)¡£ÁíÍâÊý¾Ý¿âÒ²Òª½¨Á¢,²¢ÔÚÏàÓ¦µÄÎ»ÖÃ¸ü¸ÄÅäÖÃ¡£ÕâÀïÊý
-   ¾Ý¿âÃûÎªMY_MMS.
-3.Ð¡ÐÍÉÌ³¡×ÛºÏ¹ÜÀíÏµÍ³.pdfÊÇÊµÑé±¨¸æ£¬Ö÷Òª½éÉÜÁËÕû¸ö¹¤³ÌµÄÒªÇó¡¢Êý¾Ý¿âµÄ½¨Á¢¡¢½á¹ûÕ¹Ê¾¡£¶Ô´úÂë²¢Ã»ÓÐ½éÉÜ¡£
+1. MMSAndroidæ˜¯androidå®¢æˆ·ç«¯ï¼Œè¿è¡ŒçŽ¯å¢ƒandroid studio,é¦–å…ˆæ³¨å†Œè´¦æˆ·åŽ
+   æ‰èƒ½ç”¨ï¼Œä½¿ç”¨è¿‡ç¨‹ä¸­ä¸€ç›´éœ€è¦è”ç½‘ï¼Œå› ä¸ºæ²¡æœ‰åœ¨androidæ‰‹æœºæœ¬åœ°ä¿å­˜æ•°æ®ã€‚
+2. MMSServeræ˜¯æœåŠ¡ç«¯, å¯ä»¥åœ¨pycharmä¸­è¿è¡Œï¼Œä¹Ÿå¯ä»¥åœ¨å‘½ä»¤è¡Œä¸­è¿è¡Œ(
+   éœ€è¦å®‰è£…DjangoçŽ¯å¢ƒ)ã€‚å¦å¤–æ•°æ®åº“ä¹Ÿè¦å»ºç«‹,å¹¶åœ¨ç›¸åº”çš„ä½ç½®æ›´æ”¹é…ç½®ã€‚è¿™é‡Œæ•°
+   æ®åº“åä¸ºMY_MMS.
